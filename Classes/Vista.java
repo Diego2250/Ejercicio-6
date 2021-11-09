@@ -157,6 +157,17 @@ public int menuPrductos(){
 
 	/*Metodo para mostrar mensaje de despedida al usuario
 	*/
+	public void factura(int nit, int total, int factura, String nombre, String fecha){
+		System.out.println("********************Electorica Latinoamericana********************");
+		System.out.println("Factura numero: "+factura);
+		System.out.println("Nombre del cliente: "+nombre);
+		System.out.println("NIT: "+nit);
+		System.out.println("Fecha de compra: "+fecha);
+		System.out.println("Total a cancelar: Q"+total);
+	}
+
+	/*Metodo para mostrar mensaje de despedida al usuario
+	*/
 	public void despedida(){
 		System.out.println("Gracias por usar este programa, adios");
 	}
