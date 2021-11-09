@@ -1,28 +1,35 @@
 package Classes;
+
+import Interfaces.Callinterface;
+import Interfaces.Videointerface;
+
 /******************************************************************
-camera.java
+Camera.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class camera extends Producto{
+public class Camera extends Producto implements Callinterface, Videointerface {
     boolean portable = true;
-    public camera(int precio, int serie, String marca, String fabDate, int marcaAr) {
+    
+    public Camera(int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
     }
+     
 
     @Override
-    public void execute() {
+    public void doCall(int phone_number) {
+        // TODO Auto-generated method stub
+        
+        
+    } 
+
+
+    @Override
+    public void doVid() {
         // TODO Auto-generated method stub
         
     }
-
-    public void doPic(){
-        //método de la vista para llamar. 
-    }
-
-    public void doVid(){
-        //método de la vista para llamar. 
-    }
+    
 }
