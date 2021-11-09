@@ -33,6 +33,60 @@ public class vista{
 		return op;
 	}
 
+  /*Metodo para llamar a un número de telefono
+  */
+	public void Llamada(){
+		int num=0;
+				try{
+		System.out.println("Ingrese el numero de teléfono al que desea llamar");
+		num = scan.nextInt();
+		System.out.println("Llamando al número "+num);
+	}catch (Exception e){
+				error();
+				scan.next();
+		}
+	}
+
+	  /*Metodo para visitar un sitio web
+ 	 */
+  	public void Internet(){
+		String url="";
+			try{
+		System.out.println("Ingrese la dirección web que desea visitar ");
+		url = scan.next();
+		System.out.println("Visitando la dirección web: "+url);
+	}catch (Exception e){
+			error();
+			scan.next();
+		}
+	}
+
+	/*Metodo para mostrar mensaje
+	*/
+	public void Foto(){
+		System.out.println("Se ha tomado una fotografía");
+	}
+
+	/*Metodo para mostrar mensaje
+	*/
+	public void Video(){
+		System.out.println("Se esta reproduciendo un video");
+	}
+
+	/*Metodo para mostrar mensaje
+	*/
+	public void Jugar(){
+		String juego="";
+		try{
+		System.out.println("Ingrese el videojuego que desea jugar");
+		juego = scan.next();
+		System.out.println("Ejecuntando el jugo: "+juego);
+	}catch (Exception e){
+		error();
+		scan.next();
+	}
+	}
+
 	/*Metodo para mostrar mensaje de despedida al usuario
 	*/
 	public void despedida(){
