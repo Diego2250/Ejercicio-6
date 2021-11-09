@@ -17,7 +17,7 @@ public class Controlador {
         //Iniciando catálogo. 
         ArrayList <Producto> catalogo = new ArrayList<Producto>();
         catalogo.add(new Smartphone("name", 0, 0, "patito", "date", 0));
-        catalogo.add(new Cellphone(precio, serie, marca, fabDate, marcaAr);
+        catalogo.add(new Cellphone("name", 0, 0, "patito", "date", 0));
         catalogo.add(new Phone("name", 0, 0, "patito", "date", 0));
         catalogo.add(new Camera("name", 0, 0, "patito", "date", 0));
         catalogo.add(new Desktop("name", 0, 0, "patito", "date", 0));
@@ -117,18 +117,7 @@ public class Controlador {
     
     
     
-    public void menuProductos(int opcion2, Producto producto){ // para añadir producto es necesario un método de la vista que compare. 
-        switch (opcion2) {
-            case 1://probar producto
-                producto.execute();
-                break;
-
-            case 2:
-                // añadir al carrito. 
-                break;
-            
-        }
-    }
+ 
 
     
 
