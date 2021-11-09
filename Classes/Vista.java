@@ -82,7 +82,7 @@ public int menuPrductos(){
 
 	/*Metodo para llamar a un número de telefono
 	*/
-	public int Llamada(){
+	public int pedirNumero(){
 		int num=0;
 		try{
 			System.out.println("Ingrese el numero de teléfono al que desea llamar");
