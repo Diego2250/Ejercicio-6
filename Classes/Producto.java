@@ -8,13 +8,15 @@ public abstract class Producto {
     
     Vista v = new Vista();
     
+    protected String name;
     protected int precio;
     protected int serie;
     protected String marca;
     protected String fabDate;
     protected int marcaAr;
 
-    public Producto(int precio, int serie, String marca, String fabDate, int marcaAr){
+    public Producto(String name, int precio, int serie, String marca, String fabDate, int marcaAr){
+        this.name = name;
         this.precio = precio;
         this.serie = serie;
         this.marca = marca;

@@ -31,56 +31,74 @@ public class Controlador {
         //Bienvenida
         //Menu de inicio
         // ver productos
-        switch (v.menuOpciones2()) {
-            case 2:// Probando
-                catalogo.get(v.menuPrductos()-1).execute();
-                break;
-                
-            case 1:// comprando jaja
-                switch (v.menuPrductos()) {
-                    case 1:// Smartphone
-                    carrito.add(new Smartphone(4000, 03503, "ISamsung", "Ayer", 0353));
+        boolean stop = false;
+        while (stop == false){
+            switch (v.menuOpciones()) {
+                case 1: // Ver productos. 
+                    switch (v.menuOpciones2()) {
+                        case 2:// Probando
+                            catalogo.get(v.menuPrductos()-1).execute();
+                            break;
+                            
+                        case 1:// comprando jaja
+                            switch (v.menuPrductos()) {
+                                case 1:// Smartphone
+                                carrito.add(new Smartphone(4000, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 2:// 
+                                carrito.add(new Cellphone(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 3:
+                                carrito.add(new Phone(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 4:
+                                carrito.add(new Camera(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 5:
+                                carrito.add(new Desktop(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 6:
+                                carrito.add(new Laptop(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 7:
+                                carrito.add(new SmartTV(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 8:
+                                carrito.add(new Tablet(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+
+                                case 9:
+                                carrito.add(new SmartWatch(900, 03503, "ISamsung", "Ayer", 0353));
+                                break;
+                            }
+                            break;
+                        
+                    }
                     break;
-
-                    case 2:// 
-                    carrito.add(new Cellphone(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 3:
-                    carrito.add(new Phone(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 4:
-                    carrito.add(new Camera(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 5:
-                    carrito.add(new Desktop(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 6:
-                    carrito.add(new Laptop(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 7:
-                    carrito.add(new SmartTV(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 8:
-                    carrito.add(new Tablet(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-
-                    case 9:
-                    carrito.add(new SmartWatch(900, 03503, "ISamsung", "Ayer", 0353));
-                    break;
-                    
-
-
-                }
-
-                break;
             
+                case 2: // ver carrito de compras. 
+                    for(int i = 0; i<carrito.size(); i++){
+                        v.print(carrito.get(i).get);
+                    }
+
+                    break;
+            }
+
+
+                
+
         }
+        
+
+
+            
     }
 
     /**
