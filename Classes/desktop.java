@@ -10,8 +10,8 @@ Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
 public class Desktop extends Producto implements Internetinterface, Videointerface, Videogamesinterface{
-    public Desktop(int precio, int serie, String marca, String fabDate, int marcaAr) {
-        super(precio, serie, marca, fabDate, marcaAr);
+    public Desktop(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
+        super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
     }

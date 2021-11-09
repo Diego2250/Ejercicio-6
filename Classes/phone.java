@@ -8,8 +8,8 @@ Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
 public class Phone extends Producto implements Callinterface{
-    public Phone(int precio, int serie, String marca, String fabDate, int marcaAr) {
-        super(precio, serie, marca, fabDate, marcaAr);
+    public Phone(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
+        super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
     }

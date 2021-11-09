@@ -36,6 +36,10 @@ public abstract class Producto {
         return marca;
     }
 
+    public String getName(){
+        return name;
+    }
+
     public String getFabDate(){
         return fabDate;
     }

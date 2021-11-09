@@ -14,8 +14,8 @@ public class Smartphone extends Producto implements Callinterface, Pictureinterf
 
     boolean portable = true;
 
-    public Smartphone(int precio, int serie, String marca, String fabDate, int marcaAr) {
-        super(precio, serie, marca, fabDate, marcaAr);
+    public Smartphone(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
+        super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
     }
