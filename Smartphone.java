@@ -1,3 +1,8 @@
+/******************************************************************
+smartphone.java
+Autor: Diego Morales, Javier Azurdia
+Última modificación: 09/11/2021
+******************************************************************/
 public class Smartphone extends Producto {
 
     boolean portable = true;

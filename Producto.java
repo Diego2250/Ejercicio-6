@@ -1,3 +1,8 @@
+/******************************************************************
+Producto.java
+Autor: Diego Morales, Javier Azurdia
+Última modificación: 09/11/2021
+******************************************************************/
 public abstract class Producto {
     protected int precio;
     protected int serie;
