@@ -1,5 +1,8 @@
 package Classes;
-public class cellphone extends Producto{
+
+import Interfaces.Callinterface;
+
+public class cellphone extends Producto implements Callinterface{
     boolean portable = true;
 
     public cellphone(int precio, int serie, String marca, String fabDate, int marcaAr) {
@@ -9,12 +12,10 @@ public class cellphone extends Producto{
     }
 
     @Override
-    public void execute() {
+    public void doCall(int phone_number) {
         // TODO Auto-generated method stub
         
     }
 
-    public void doCall(int phone_number){
-        //método de la vista para llamar. 
-    }
+    
 }

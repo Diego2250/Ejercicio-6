@@ -33,8 +33,8 @@ public class vista{
 		return op;
 	}
 
-  /*Metodo para llamar a un número de telefono
-  */
+	/*Metodo para llamar a un número de telefono
+	*/
 	public void Llamada(){
 		int num=0;
 		try{
@@ -47,8 +47,8 @@ public class vista{
 		}
 	}
 
-	  /*Metodo para visitar un sitio web
- 	 */
+	/*Metodo para visitar un sitio web
+	*/
   	public void Internet(){
 		String url="";
 		try{

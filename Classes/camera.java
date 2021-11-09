@@ -22,6 +22,7 @@ public class Camera extends Producto implements Callinterface, Videointerface {
     public void doCall(int phone_number) {
         // TODO Auto-generated method stub
         
+
         
     } 
 
