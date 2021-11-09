@@ -78,12 +78,12 @@ public class vista{
 	public void Jugar(){
 		String juego="";
 		try{ 
-		System.out.println("Ingrese el videojuego que desea jugar");
-		juego = scan.next();
-		System.out.println("Ejecuntando el jugo: "+juego);
-	}catch (Exception e){
-		error();
-		scan.next();
+			System.out.println("Ingrese el videojuego que desea jugar");
+			juego = scan.next();
+			System.out.println("Ejecuntando el jugo: "+juego);
+		}catch (Exception e){
+			error();
+			scan.next();
 		}
 	}
 
