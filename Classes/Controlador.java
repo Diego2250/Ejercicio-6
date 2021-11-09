@@ -17,7 +17,7 @@ public class Controlador {
         //Iniciando catálogo. 
         ArrayList <Producto> catalogo = new ArrayList<Producto>();
         catalogo.add(new Smartphone("name", 0, 0, "patito", "date", 0));
-        catalogo.add(new Cellphone("name", 0, 0, "patito", "date", 0));
+        catalogo.add(new Cellphone(precio, serie, marca, fabDate, marcaAr);
         catalogo.add(new Phone("name", 0, 0, "patito", "date", 0));
         catalogo.add(new Camera("name", 0, 0, "patito", "date", 0));
         catalogo.add(new Desktop("name", 0, 0, "patito", "date", 0));

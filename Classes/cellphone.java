@@ -5,10 +5,10 @@ import Interfaces.Callinterface;
 public class Cellphone extends Producto implements Callinterface{
     boolean portable = true;
 
+
     public Cellphone(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
-
     }
 
     @Override
