@@ -1,3 +1,4 @@
+package Classes;
 /***************************************************
 Vista.java
 Autor: Diego Morales, Javier Azurdia

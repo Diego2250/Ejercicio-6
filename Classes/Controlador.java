@@ -1,3 +1,4 @@
+package Classes;
 /***************************************************
 controlador.java
 Autor: Diego Morales, Javier Azurdia
@@ -8,6 +9,7 @@ y los comunica de acuerdo con las elecciones del
 usuario.
 ***************************************************/
 import java.util.ArrayList;
+
 public class Controlador {
     public static void main(String[] args){
         Vista v = new Vista();
