@@ -8,9 +8,9 @@ y los comunica de acuerdo con las elecciones del
 usuario.
 ***************************************************/
 import java.util.ArrayList;
-public class controlador {
+public class Controlador {
     public static void main(String[] args){
-        vista v = new vista();
+        Vista v = new Vista();
         //ArrayList<producto> carrito=new ArrayList<producto>(); 
         int opcion = 0;
         v.bienvenida();

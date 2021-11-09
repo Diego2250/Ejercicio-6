@@ -11,9 +11,9 @@ import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.IOException;
-public class archivo{
-vista v = new vista();
-  public archivo(){
+public class Archivo{
+Vista v = new Vista();
+  public Archivo(){
 
   }
   /*Metodo crear un archivo de texto

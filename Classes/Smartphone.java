@@ -14,12 +14,6 @@ public class Smartphone extends Producto {
 
     }
 
-    @Override
-    public void execute() {
-        // TODO Auto-generated method stub
-        
-    }
-
     public void doCall(int phone_number){
         //método de la vista para llamar. 
     }

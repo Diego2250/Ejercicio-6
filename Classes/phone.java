@@ -7,8 +7,8 @@ phone.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class phone extends Producto implements Callinterface{
-    public phone(int precio, int serie, String marca, String fabDate, int marcaAr) {
+public class Phone extends Producto implements Callinterface{
+    public Phone(int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
