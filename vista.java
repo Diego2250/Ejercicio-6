@@ -77,7 +77,7 @@ public class vista{
 	*/
 	public void Jugar(){
 		String juego="";
-		try{
+		try{ 
 		System.out.println("Ingrese el videojuego que desea jugar");
 		juego = scan.next();
 		System.out.println("Ejecuntando el jugo: "+juego);
