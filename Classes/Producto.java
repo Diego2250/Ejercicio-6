@@ -1,3 +1,4 @@
+package Classes;
 /******************************************************************
 Producto.java
 Autor: Diego Morales, Javier Azurdia

@@ -1,11 +1,11 @@
+package Classes;
 /******************************************************************
-camera.java
+smartTV.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class camera extends Producto{
-    boolean portable = true;
-    public camera(int precio, int serie, String marca, String fabDate, int marcaAr) {
+public class smartTV extends Producto{
+    public smartTV(int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
@@ -17,7 +17,7 @@ public class camera extends Producto{
         
     }
 
-    public void doPic(){
+    public void doInternet(String url){
         //método de la vista para llamar. 
     }
 
