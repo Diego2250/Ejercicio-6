@@ -6,6 +6,7 @@ Fecha: 08/11/2021
 
 Vista. Responsable de toda interaccion con el usuario.
 ***************************************************/
+////////jsjsjs
 import java.util.Scanner;
 public class Vista{
 	private Scanner scan;
