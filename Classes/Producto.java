@@ -4,7 +4,7 @@ Producto.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class Producto {
+public abstract class Producto {
     protected int precio;
     protected int serie;
     protected String marca;
@@ -38,6 +38,8 @@ public class Producto {
     public int getMarcaAr(){
         return marcaAr;
     }
+
+    public abstract void execute();
 
 
 }
