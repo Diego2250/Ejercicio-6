@@ -21,10 +21,10 @@ public class Vista{
 		int op=0;
 		try{
 			String s = "¿Que deseas hacer?\n" +
-					"1. Ver todos los productos\n" +
-					"2. Probar funcionalidades de los productos\n" +
-					"3. Ver carrito de compras\n" +
-					"4. Salir\n";
+					"1. Ver productos\n" +
+					"2. Ver carrito de compras\n" +
+					"3. Pagar\n"+
+					"4. Salir\n"; 
 
 			System.out.println(s);
 			op = scan.nextInt();
@@ -35,33 +35,85 @@ public class Vista{
 		return op;
 	}
 
+		/*Metodo para elegír una opción
+	@return número de opción
+	*/
+	public int menuOpciones2(){
+		int op=0;
+		try{
+			String s = "¿Que deseas hacer?\n" +
+					"1. Comprar Productos\n" +
+					"2. Probar Productos\n";
+			System.out.println(s);
+			op = scan.nextInt();
+		}catch (Exception e){
+			error();
+			scan.next();
+		}
+		return op;
+	}
+
+
+/*Metodo para elegír una opción
+@return número de opción
+*/
+public int menuPrductos(){
+	int op=0;
+	try{
+		String s = "Seleccione un producto\n" +
+				"1. Smartphone\n" +
+				"2. Celular\n" +
+				"3. Telefono Fijo\n" +
+				"4. Camara\n"+
+				"5. Computadora pesonal Desktop\n"+ 
+				"6. Computadora personal Laptop\n" +
+				"7. Smart TV\n" +
+				"8. Tablet\n" +
+				"9. SmartWatch\n"; 				
+
+		System.out.println(s);
+		op = scan.nextInt();
+	}catch (Exception e){
+		error();
+		scan.next();
+	}
+	return op;
+}
+
 	/*Metodo para llamar a un número de telefono
 	*/
-	public void Llamada(){
+	public int Llamada(){
 		int num=0;
 		try{
 			System.out.println("Ingrese el numero de teléfono al que desea llamar");
 			num = scan.nextInt();
-			System.out.println("Llamando al número "+num);
 		}catch (Exception e){
 			error();
 			scan.next();
 		}
+		return num; 
 	}
 
 	/*Metodo para visitar un sitio web
 	*/
-  	public void Internet(){
+  	public String PedirURL(){
 		String url="";
 		try{
 			System.out.println("Ingrese la dirección web que desea visitar ");
 			url = scan.next();
-			System.out.println("Visitando la dirección web: "+url);
 		}catch (Exception e){
 			error();
 			scan.next();
 		}
+		return url; 
 	}
+
+	/*Metodo para mostrar mensaje
+	*/
+	public void Internet(String url){
+		System.out.println("Visitando el sitio: "+url);
+	}
+
 
 	/*Metodo para mostrar mensaje
 	*/
@@ -77,16 +129,22 @@ public class Vista{
 
 	/*Metodo para mostrar mensaje
 	*/
-	public void Jugar(){
+	public String pedirJuego(){
 		String juego="";
 		try{ 
 			System.out.println("Ingrese el videojuego que desea jugar");
 			juego = scan.next();
-			System.out.println("Ejecuntando el jugo: "+juego);
 		}catch (Exception e){
 			error();
 			scan.next();
 		}
+		return juego;
+	}
+
+	/*Metodo para mostrar mensaje
+	*/
+	public void Jugar(String juego){
+		System.out.println("Ejecuntando el jugo: "+juego);
 	}
 
 	/*Metodo para mostrar mensaje de despedida al usuario
