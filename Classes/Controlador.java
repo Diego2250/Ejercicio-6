@@ -86,9 +86,15 @@ public class Controlador {
                 case 2: // ver carrito de compras. 
                     for(int i = 0; i<carrito.size(); i++){
                         v.print(carrito.get(i).getName());
+                        v.print("Q. " + carrito.get(i).getPrecio());
+                        v.print("\n");
                     }
 
                     break;
+
+                case 3: //imprimir esa mierda de factura
+                    
+
             }
 
 

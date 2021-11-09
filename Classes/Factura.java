@@ -1,5 +1,7 @@
 package Classes;
 
+import java.util.ArrayList;
+
 public class Factura {
     private String nombreCliente, fecha; 
     private int NIT, NoFactura, Total; 
@@ -16,4 +18,12 @@ public class Factura {
     public void ImprimirFactura() {
         
     }
+
+    public void caja(ArrayList<Producto> carrito){
+        
+    }
+
+    public 
+
+
 }
