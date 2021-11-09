@@ -1,8 +1,5 @@
-public class Smartphone extends Producto {
-
-    boolean portable = true;
-
-    public Smartphone(int precio, int serie, String marca, String fabDate, int marcaAr) {
+public class laptop extends Producto{
+    public laptop(int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
@@ -14,20 +11,15 @@ public class Smartphone extends Producto {
         
     }
 
-    public void doCall(int phone_number){
+    public void doVid(){
         //método de la vista para llamar. 
     }
 
-    public void doPic(){
-        //método de la vista para tomar pic. 
+    public void doVideogames(String videogame){
+        //método de la vista para llamar. 
     }
 
     public void doInternet(String url){
         //método de la vista para llamar. 
     }
-
-    public void doVid(){
-        //método de la vista para llamar. 
-    }
-    
 }
