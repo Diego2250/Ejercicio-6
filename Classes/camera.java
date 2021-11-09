@@ -28,5 +28,13 @@ public class Camera extends Producto implements Callinterface, Videointerface {
     public boolean doVid() {
         return true;
     }
+
+
+    @Override
+    public void execute() {
+        Vista v = new Vista();
+        doCall(v.);
+        
+    }
     
 }
