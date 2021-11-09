@@ -12,9 +12,9 @@ public class vista{
 	public vista(){
 		scan = new Scanner(System.in);
 	}
-  /*Metodo para elegír una opción
-  @return número de opción
-  */
+	/*Metodo para elegír una opción
+	@return número de opción
+	*/
 	public int menuOpciones(){
 		int op=0;
 		try{
@@ -84,7 +84,7 @@ public class vista{
 	}catch (Exception e){
 		error();
 		scan.next();
-	}
+		}
 	}
 
 	/*Metodo para mostrar mensaje de despedida al usuario
@@ -112,7 +112,7 @@ public class vista{
 
 	/*Metodo para mostrar mensaje
 	*/
-  public void error(){
-    System.out.println("Ha ocurrido un error");
-  }
+  	public void error(){
+		System.out.println("Ha ocurrido un error");
+	}
 }
