@@ -17,18 +17,18 @@ public class vista{
   */
 	public int menuOpciones(){
 		int op=0;
-				try{
+		try{
 			String s = "¿Que deseas hacer?\n" +
 					"1. Ver todos los productos\n" +
 					"2. Probar funcionalidades de los productos\n" +
 					"3. Ver carrito de compras\n" +
 					"4. Salir\n";
 
-		System.out.println(s);
-		op = scan.nextInt();
-	}catch (Exception e){
-				error();
-				scan.next();
+			System.out.println(s);
+			op = scan.nextInt();
+		}catch (Exception e){
+			error();
+			scan.next();
 		}
 		return op;
 	}
@@ -37,13 +37,13 @@ public class vista{
   */
 	public void Llamada(){
 		int num=0;
-				try{
-		System.out.println("Ingrese el numero de teléfono al que desea llamar");
-		num = scan.nextInt();
-		System.out.println("Llamando al número "+num);
-	}catch (Exception e){
-				error();
-				scan.next();
+		try{
+			System.out.println("Ingrese el numero de teléfono al que desea llamar");
+			num = scan.nextInt();
+			System.out.println("Llamando al número "+num);
+		}catch (Exception e){
+			error();
+			scan.next();
 		}
 	}
 
@@ -51,11 +51,11 @@ public class vista{
  	 */
   	public void Internet(){
 		String url="";
-			try{
-		System.out.println("Ingrese la dirección web que desea visitar ");
-		url = scan.next();
-		System.out.println("Visitando la dirección web: "+url);
-	}catch (Exception e){
+		try{
+			System.out.println("Ingrese la dirección web que desea visitar ");
+			url = scan.next();
+			System.out.println("Visitando la dirección web: "+url);
+		}catch (Exception e){
 			error();
 			scan.next();
 		}
