@@ -16,7 +16,6 @@ public class Phone extends Producto implements Callinterface{
 
     @Override
     public int doCall(int phone_number) {
-        // TODO Auto-generated method stub
         return phone_number;
     }
 
