@@ -1,10 +1,16 @@
 package Classes;
+
+import Interfaces.Callinterface;
+import Interfaces.Internetinterface;
+import Interfaces.Pictureinterface;
+import Interfaces.Videointerface;
+
 /******************************************************************
 smartphone.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class Smartphone extends Producto {
+public class Smartphone extends Producto implements Callinterface, Pictureinterface, Internetinterface, Videointerface{
 
     boolean portable = true;
 
@@ -14,20 +20,30 @@ public class Smartphone extends Producto {
 
     }
 
-    public void doCall(int phone_number){
-        //método de la vista para llamar. 
+    @Override
+    public boolean doVid() {
+        // TODO Auto-generated method stub
+        return true;
     }
 
-    public void doPic(){
-        //método de la vista para tomar pic. 
+    @Override
+    public String doInternet(String url) {
+        // TODO Auto-generated method stub
+        return url;
     }
 
-    public void doInternet(String url){
-        //método de la vista para llamar. 
+    @Override
+    public boolean doPic() {
+        // TODO Auto-generated method stub
+        return true;
+        
     }
 
-    public void doVid(){
-        //método de la vista para llamar. 
+    @Override
+    public int doCall(int phone_number) {
+        // TODO Auto-generated method stub
+        return phone_number;
     }
+
     
 }
