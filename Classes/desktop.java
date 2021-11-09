@@ -1,9 +1,11 @@
+package Classes;
 /******************************************************************
-tablet.java
+desktop.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
-******************************************************************/public class tablet extends Producto{
-    public tablet(int precio, int serie, String marca, String fabDate, int marcaAr) {
+******************************************************************/
+public class desktop extends Producto{
+    public desktop(int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
@@ -16,6 +18,10 @@ Autor: Diego Morales, Javier Azurdia
     }
 
     public void doVid(){
+        //método de la vista para llamar. 
+    }
+
+    public void doVideogames(String videogame){
         //método de la vista para llamar. 
     }
 
