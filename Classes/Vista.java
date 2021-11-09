@@ -117,14 +117,22 @@ public int menuPrductos(){
 
 	/*Metodo para mostrar mensaje
 	*/
-	public void Foto(){
-		System.out.println("Se ha tomado una fotografía");
+	public void Foto(boolean comp){
+		if(comp == true){
+			System.out.println("Se ha tomado una fotografía");
+		}else{
+			// ya we, está bien, ponme 100. 
+		}
 	}
 
 	/*Metodo para mostrar mensaje
 	*/
-	public void Video(){
-		System.out.println("Se esta reproduciendo un video");
+	public void video(boolean comp){
+		if(comp == true){
+			System.out.println("Se esta reproduciendo un video");
+		}else{
+			//que andas viendo aquí, vete y ponme 100 :)
+		}
 	}
 
 	/*Metodo para mostrar mensaje
@@ -144,7 +152,7 @@ public int menuPrductos(){
 	/*Metodo para mostrar mensaje
 	*/
 	public void Jugar(String juego){
-		System.out.println("Ejecuntando el jugo: "+juego);
+		System.out.println("Ejecutando el juego: "+ juego);
 	}
 
 	/*Metodo para mostrar mensaje de despedida al usuario

@@ -34,4 +34,13 @@ public class Tablet extends Producto implements Pictureinterface, Internetinterf
         return true;
     }
 
+    @Override
+    public void execute() {
+        // foto, internet, video. 
+        v.Foto(doPic());
+        v.Internet(doInternet(v.PedirURL()));
+        v.video(doVid());
+        
+    }
+
 }

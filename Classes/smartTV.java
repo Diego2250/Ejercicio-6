@@ -26,4 +26,14 @@ public class SmartTV extends Producto implements Internetinterface, Videointerfa
         // TODO Auto-generated method stub
         return url;
     }
+
+    @Override
+    public void execute() {
+        // TODO Auto-generated method stub
+        v.Internet(doInternet(v.PedirURL()));
+        v.video(doVid());
+
+
+        
+    }
 }

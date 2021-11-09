@@ -31,4 +31,13 @@ public class Laptop extends Producto implements Internetinterface, Videointerfac
         return url;
     }
 
+    @Override
+    public void execute() {
+        // internet, video, videojuego. 
+        v.Internet(doInternet(v.PedirURL()));
+        v.video(doVid());
+        v.Jugar(doVideogames(v.pedirJuego()));
+        
+    }
+
 }

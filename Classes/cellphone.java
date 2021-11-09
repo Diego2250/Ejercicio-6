@@ -17,5 +17,12 @@ public class Cellphone extends Producto implements Callinterface{
         
     }
 
+    @Override
+    public void execute() {
+        v.calling(doCall(v.pedirNumero()));
+
+
+    }
+
     
 }

@@ -32,8 +32,8 @@ public class Camera extends Producto implements Callinterface, Videointerface {
 
     @Override
     public void execute() {
-        Vista v = new Vista();
-        doCall(v.);
+        v.calling(doCall(v.pedirNumero()));
+        v.video(doVid());
         
     }
     

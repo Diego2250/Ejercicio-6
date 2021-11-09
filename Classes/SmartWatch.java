@@ -27,5 +27,13 @@ public class SmartWatch extends Producto implements Pictureinterface, Callinterf
         return true;
     }
 
+    @Override
+    public void execute() {
+        // foto, llamar. 
+        v.calling(doCall(v.pedirNumero()));
+        v.Foto(doPic());
+        
+    }
+
     
 }

@@ -45,5 +45,15 @@ public class Smartphone extends Producto implements Callinterface, Pictureinterf
         return phone_number;
     }
 
+    @Override
+    public void execute() {
+        // video, internet, pic, call. 
+        v.calling(doCall(v.pedirNumero()));
+        v.Internet(doInternet(v.PedirURL()));
+        v.video(doVid());
+        v.Foto(doPic());
+        
+    }
+
     
 }

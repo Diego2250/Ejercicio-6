@@ -5,6 +5,9 @@ Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
 public abstract class Producto {
+    
+    Vista v = new Vista();
+    
     protected int precio;
     protected int serie;
     protected String marca;

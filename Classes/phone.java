@@ -19,5 +19,13 @@ public class Phone extends Producto implements Callinterface{
         return phone_number;
     }
 
+    @Override
+    public void execute() {
+        // llamar. 
+        v.calling(doCall(v.pedirNumero()));
+
+        
+    }
+
     
 }

@@ -33,5 +33,16 @@ public class Desktop extends Producto implements Internetinterface, Videointerfa
         return url;        
     }
 
+    @Override
+    public void execute() {
+        // TODO Auto-generated method stub
+        // internet, video, videogame
+        v.Internet(doInternet(v.PedirURL()));
+        v.video(doVid());
+        v.Jugar(doVideogames(v.pedirJuego()));
+
+        
+    }
+
     
 }
