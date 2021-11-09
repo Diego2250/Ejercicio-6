@@ -115,4 +115,8 @@ public class vista{
   	public void error(){
 		System.out.println("Ha ocurrido un error");
 	}
+
+	public void print(String string){
+		System.out.println(string);
+	}
 }
