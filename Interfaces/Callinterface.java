@@ -1,4 +1,4 @@
 package Interfaces;
 public interface Callinterface {
-    public void doCall(int phone_number);
+    public int doCall(int phone_number);
 }

@@ -119,4 +119,8 @@ public class vista{
 	public void print(String string){
 		System.out.println(string);
 	}
+
+	public void calling(int phone_number){
+		print("LLamando al número" + phone_number);
+	}
 }

@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface Videogamesinterface {
-    public void doVideogames(String videogame);
+    public String doVideogames(String videogame);
 }

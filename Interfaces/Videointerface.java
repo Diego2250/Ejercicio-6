@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface Videointerface {
-    public void doVid();
+    public boolean doVid();
 }

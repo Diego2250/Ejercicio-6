@@ -1,10 +1,15 @@
 package Classes;
+
+import Interfaces.Internetinterface;
+import Interfaces.Videogamesinterface;
+import Interfaces.Videointerface;
+
 /******************************************************************
 desktop.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class desktop extends Producto{
+public class desktop extends Producto implements Internetinterface, Videointerface, Videogamesinterface{
     public desktop(int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
@@ -12,20 +17,21 @@ public class desktop extends Producto{
     }
 
     @Override
-    public void execute() {
-        // TODO Auto-generated method stub
+    public String doVideogames(String videogame) {
+        return videogame;
         
     }
 
-    public void doVid(){
-        //método de la vista para llamar. 
+    @Override
+    public boolean doVid() {
+        // TODO Auto-generated method stub
+        return false;
     }
 
-    public void doVideogames(String videogame){
-        //método de la vista para llamar. 
+    @Override
+    public String doInternet(String url) {
+        return url;        
     }
 
-    public void doInternet(String url){
-        //método de la vista para llamar. 
-    }
+    
 }

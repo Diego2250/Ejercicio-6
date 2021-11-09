@@ -19,18 +19,14 @@ public class Camera extends Producto implements Callinterface, Videointerface {
      
 
     @Override
-    public void doCall(int phone_number) {
-        // TODO Auto-generated method stub
-        
-
-        
+    public int doCall(int phone_number) {
+        return phone_number;    
     } 
 
 
     @Override
-    public void doVid() {
-        // TODO Auto-generated method stub
-        
+    public boolean doVid() {
+        return true;
     }
     
 }
