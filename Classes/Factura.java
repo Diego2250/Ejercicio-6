@@ -16,11 +16,6 @@ public class Factura {
         NIT=nit; 
     }
 
-    public void ImprimirFactura() {
-        Vista v = new Vista();
-        v.print("");
-    }
-
     public void cuenta(ArrayList<Producto> carrito){ // esta cosa se llama ANTES DE PAGaR
         for(int i = 0; i<carrito.size(); i++){
             sumPrecio(carrito.get(i).getPrecio());
@@ -28,6 +23,11 @@ public class Factura {
             precios.add(carrito.get(i).getPrecio());
         }
     }
+
+    public int getTotal(){
+        return total;
+    }
+
 
     public void sumPrecio(int nuevo){
         this.total = total + nuevo;

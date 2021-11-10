@@ -93,45 +93,25 @@ public class Controlador {
                     break;
 
                 case 3: //imprimir esa mierda de factura
-                 String[] data=v.PedirDatosClienteString(); 
-                 String nombre=data[0]; 
-                 String fecha=data[1];
-                 int nit=v.PedirDatosClienteInt(); 
-                 Factura factura=new Factura(nombre, fecha, nit); 
+                    String[] data=v.PedirDatosClienteString(); 
+                    String nombre=data[0]; 
+                    String fecha=data[1];
+                    int nit=v.PedirDatosClienteInt(); 
+                    Factura ffactura = new Factura(nombre, fecha, nit); 
+                    ffactura.cuenta(carrito);
+                    v.factura(nit, ffactura.getTotal(), 03510, nombre, fecha, ffactura.getPrecios(), ffactura.getArticulos());
+                    break;
 
-            }
+                case 4: // salir
+                    v.despedida();
+                    stop = true;
+                    break;
 
-
-                
+            }   
 
         }
-        
-
-
             
     }
-
-    /**
-     * menu de inicio
-     * Ver el carrito...
-     * ver productos, se despliega la lista de productos que hay. 
-     *      probar producto
-     *      añadir al carrito
-     * 
-     * 
-     * 
-     * 
-     *
-     */
-
-    
-    
-    
- 
-
-    
-
-
 
 
 }

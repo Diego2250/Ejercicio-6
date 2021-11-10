@@ -18,6 +18,7 @@ public class Tablet extends Producto implements Pictureinterface, Internetinterf
 
     }
 
+    
     @Override
     public boolean doVid() {
         // TODO Auto-generated method stub

@@ -101,9 +101,9 @@ public int menuPrductos(){
 		String[] data={"", ""};
 		try{
 			System.out.println("Ingrese El nombre del cliente: ");
-			data[0] = scan.nextLine();
+			data[0] = scan.next();
 			System.out.println("Ingrese la fecha de la compra: ");
-			data[1] = scan.nextLine();
+			data[1] = scan.next();
 		}catch (Exception e){
 			error();
 			scan.next();
