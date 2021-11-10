@@ -14,7 +14,9 @@ public class SmartTV extends Producto implements Internetinterface, Videointerfa
         //TODO Auto-generated constructor stub
 
     }
-
+      /*
+    Metodo para mostrar un video
+    */
     @Override
     public boolean doVid() {
         // TODO Auto-generated method stub
@@ -22,7 +24,7 @@ public class SmartTV extends Producto implements Internetinterface, Videointerfa
     }
 
 
-        /*
+    /*
     Metodo para visitar un sitio web
     @param url
     */

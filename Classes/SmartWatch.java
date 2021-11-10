@@ -14,13 +14,19 @@ public class SmartWatch extends Producto implements Pictureinterface, Callinterf
         //TODO Auto-generated constructor stub
 
     }
-
+      /*
+    Metodo para hacer una llamada
+    @param Numero de telefono
+    */
     @Override
     public int doCall(int phone_number) {
         // TODO Auto-generated method stub
         return phone_number;
     }
 
+          /*
+    Metodo para tomar foto
+    */
     @Override
     public boolean doPic() {
         // TODO Auto-generated method stub

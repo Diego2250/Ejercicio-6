@@ -1,6 +1,7 @@
 package Classes;
 
 import Interfaces.Callinterface;
+import Interfaces.Pictureinterface;
 import Interfaces.Videointerface;
 
 /******************************************************************
@@ -8,7 +9,7 @@ Camera.java
 Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
-public class Camera extends Producto implements Callinterface, Videointerface {
+public class Camera extends Producto implements Pictureinterface, Videointerface {
     boolean portable = true;
     /*Constructor de clase*/
     public Camera(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
@@ -18,12 +19,20 @@ public class Camera extends Producto implements Callinterface, Videointerface {
     
      
 
+       /*
+    Metodo para tomar foto
+    */
     @Override
-    public int doCall(int phone_number) {
-        return phone_number;    
-    } 
+    public boolean doPic() {
+        // TODO Auto-generated method stub
+        return true;
+        
+    }
 
 
+         /*
+    Metodo para mostrar un video
+    */
     @Override
     public boolean doVid() {
         return true;
@@ -32,7 +41,7 @@ public class Camera extends Producto implements Callinterface, Videointerface {
 
     @Override
     public void execute() {
-        v.calling(doCall(v.pedirNumero()));
+        v.video(doVid());
         v.video(doVid());
         
     }

@@ -15,6 +15,10 @@ public class Phone extends Producto implements Callinterface{
 
     }
 
+        /*
+    Metodo para hacer una llamada
+    @param Numero de telefono
+    */
     @Override
     public int doCall(int phone_number) {
         return phone_number;

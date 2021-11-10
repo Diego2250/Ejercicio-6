@@ -13,25 +13,35 @@ Autor: Diego Morales, Javier Azurdia
 public class Smartphone extends Producto implements Callinterface, Pictureinterface, Internetinterface, Videointerface{
 
     boolean portable = true;
-
+    /*Constructor de clase*/
     public Smartphone(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
 
     }
 
+      /*
+    Metodo para mostrar un video
+    */
     @Override
     public boolean doVid() {
         // TODO Auto-generated method stub
         return true;
     }
 
+    /*
+    Metodo para visitar un sitio web
+    @param url
+    */
     @Override
     public String doInternet(String url) {
         // TODO Auto-generated method stub
         return url;
     }
 
+      /*
+    Metodo para tomar foto
+    */
     @Override
     public boolean doPic() {
         // TODO Auto-generated method stub
@@ -39,6 +49,10 @@ public class Smartphone extends Producto implements Callinterface, Pictureinterf
         
     }
 
+      /*
+    Metodo para hacer una llamada
+    @param Numero de telefono
+    */
     @Override
     public int doCall(int phone_number) {
         // TODO Auto-generated method stub

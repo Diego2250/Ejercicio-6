@@ -17,20 +17,28 @@ public class Tablet extends Producto implements Pictureinterface, Internetinterf
         //TODO Auto-generated constructor stub
 
     }
-
-    
+     /*
+    Metodo para mostrar un video
+    */
     @Override
     public boolean doVid() {
         // TODO Auto-generated method stub
         return true;
     }
 
+        /*
+    Metodo para visitar un sitio web
+    @param url
+    */
     @Override
     public String doInternet(String url) {
         // TODO Auto-generated method stub
         return url;
     }
 
+      /*
+    Metodo para tomar foto
+    */
     @Override
     public boolean doPic() {
         // TODO Auto-generated method stub

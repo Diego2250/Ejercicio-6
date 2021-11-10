@@ -2,7 +2,7 @@ package Classes;
 /***************************************************
 controlador.java
 Autor: Diego Morales, Javier Azurdia
-Fecha: 08/11/2021
+Fecha: 09/11/2021
 
 Driver program. Instancia la vista y el modelo,
 y los comunica de acuerdo con las elecciones del
