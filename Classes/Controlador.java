@@ -93,7 +93,11 @@ public class Controlador {
                     break;
 
                 case 3: //imprimir esa mierda de factura
-                    
+                 String[] data=v.PedirDatosClienteString(); 
+                 String nombre=data[0]; 
+                 String fecha=data[1];
+                 int nit=v.PedirDatosClienteInt(); 
+                 Factura factura=new Factura(nombre, fecha, nit); 
 
             }
 

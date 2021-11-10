@@ -10,12 +10,10 @@ public class Factura {
     ArrayList<String> articulos = new ArrayList<String>();
     ArrayList<Integer> precios = new ArrayList<Integer>();
 
-    public Factura(String nombre, String fech, int nit, int factura, int tot){
+    public Factura(String nombre, String fech, int nit){
         nombreCliente=nombre;
         fecha=fech; 
         NIT=nit; 
-        NoFactura=factura; 
-        Total=tot; 
     }
 
     public void ImprimirFactura() {

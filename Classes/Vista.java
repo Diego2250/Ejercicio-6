@@ -80,6 +80,7 @@ public int menuPrductos(){
 	return op;
 }
 
+
 	/*Metodo para llamar a un número de telefono
 	*/
 	public int pedirNumero(){
@@ -93,6 +94,37 @@ public int menuPrductos(){
 		}
 		return num; 
 	}
+
+	/*Metodo para pedir datos
+	*/
+	public String[] PedirDatosClienteString(){
+		String[] data={"", ""};
+		try{
+			System.out.println("Ingrese El nombre del cliente: ");
+			data[0] = scan.nextLine();
+			System.out.println("Ingrese la fecha de la compra: ");
+			data[1] = scan.nextLine();
+		}catch (Exception e){
+			error();
+			scan.next();
+		}
+		return data; 
+	}
+
+		/*Metodo para pedir datos
+	*/
+	public int PedirDatosClienteInt(){
+		int nit=0;
+		try{
+			System.out.println("Ingrese NIT del cliente: ");
+			nit= scan.nextInt();
+		}catch (Exception e){
+			error();
+			scan.next();
+		}
+		return nit; 
+	}
+
 
 	/*Metodo para visitar un sitio web
 	*/
