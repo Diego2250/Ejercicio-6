@@ -54,31 +54,31 @@ public class Vista{
 	}
 
 
-/*Metodo para elegír una opción
-@return número de opción
-*/
-public int menuPrductos(){
-	int op=0;
-	try{
-		String s = "Seleccione un producto\n" +
-				"1. Smartphone\n" +
-				"2. Celular\n" +
-				"3. Telefono Fijo\n" +
-				"4. Camara\n"+
-				"5. Computadora pesonal Desktop\n"+ 
-				"6. Computadora personal Laptop\n" +
-				"7. Smart TV\n" +
-				"8. Tablet\n" +
-				"9. SmartWatch\n"; 				
+	/*Metodo para elegír una opción
+	@return número de opción
+	*/
+	public int menuPrductos(){
+		int op=0;
+		try{
+			String s = "Seleccione un producto\n" +
+					"1. Smartphone\n" +
+					"2. Celular\n" +
+					"3. Telefono Fijo\n" +
+					"4. Camara\n"+
+					"5. Computadora pesonal Desktop\n"+ 
+					"6. Computadora personal Laptop\n" +
+					"7. Smart TV\n" +
+					"8. Tablet\n" +
+					"9. SmartWatch\n"; 				
 
-		System.out.println(s);
-		op = scan.nextInt();
-	}catch (Exception e){
-		error();
-		scan.next();
+			System.out.println(s);
+			op = scan.nextInt();
+		}catch (Exception e){
+			error();
+			scan.next();
+		}
+		return op;
 	}
-	return op;
-}
 
 
 	/*Metodo para llamar a un número de telefono
@@ -208,6 +208,7 @@ public int menuPrductos(){
 	public void despedida(){
 		System.out.println("Gracias por usar este programa, adios");
 	}
+	
 	/*Metodo para mostrar mensaje de bienvenida al usuario
 	*/
 	public void bienvenida(){
