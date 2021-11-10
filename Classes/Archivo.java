@@ -3,7 +3,7 @@ package Classes;
 /******************************************************************
 archivo.java
 Autor: Diego Morales, Javier Azurdia
-Última modificación: 08/11/2021
+Última modificación: 09/11/2021
 
 Modelo de archivo para uso del Controlador.
 ******************************************************************/
@@ -14,6 +14,7 @@ import java.util.Scanner;
 import java.io.IOException;
 public class Archivo{
 Vista v = new Vista();
+/*Constructor de clase*/
   public Archivo(){
 
   }
@@ -23,7 +24,6 @@ Vista v = new Vista();
       try {
         File myObj = new File(".txt");
         if (myObj.createNewFile()) {
-            /***CAMBIAR**/
           System.out.println("Archivo creado: " + myObj.getName());
         } else {
         }
@@ -39,7 +39,6 @@ Vista v = new Vista();
         FileWriter myWriter = new FileWriter("parqueo.txt", true);
         myWriter.write("");
         myWriter.close();
-        /***CAMBIAR**/
         System.out.println("Se escribió correctamente la información");
       } catch (IOException e) {
         v.error();
@@ -47,6 +46,7 @@ Vista v = new Vista();
     }
       }
       /*Metodo para leer el archivo
+      @param archivo
       */
   public void leer(String archivo){
     try {

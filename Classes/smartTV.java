@@ -21,6 +21,11 @@ public class SmartTV extends Producto implements Internetinterface, Videointerfa
         return true;
     }
 
+
+        /*
+    Metodo para visitar un sitio web
+    @param url
+    */
     @Override
     public String doInternet(String url) {
         // TODO Auto-generated method stub

@@ -1,15 +1,17 @@
+/******************************************************************
+tablet.java
+Autor: Diego Morales, Javier Azurdia
+Última modificación: 09/11/2021
+******************************************************************/
 package Classes;
 
 import Interfaces.Internetinterface;
 import Interfaces.Pictureinterface;
 import Interfaces.Videointerface;
 
-/******************************************************************
-tablet.java
-Autor: Diego Morales, Javier Azurdia
-Última modificación: 09/11/2021
-******************************************************************/
+
 public class Tablet extends Producto implements Pictureinterface, Internetinterface, Videointerface{
+    /*Constructor de clase*/
     public Tablet(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub

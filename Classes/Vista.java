@@ -1,4 +1,3 @@
-package Classes;
 /***************************************************
 Vista.java
 Autor: Diego Morales, Javier Azurdia
@@ -6,7 +5,7 @@ Fecha: 08/11/2021
 
 Vista. Responsable de toda interaccion con el usuario.
 ***************************************************/
-////////jsjsjs
+package Classes;
 import java.util.Scanner;
 public class Vista{
 	private Scanner scan;

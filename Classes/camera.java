@@ -9,14 +9,12 @@ Autor: Diego Morales, Javier Azurdia
 Última modificación: 09/11/2021
 ******************************************************************/
 public class Camera extends Producto implements Callinterface, Videointerface {
+    boolean portable = true;
+    /*Constructor de clase*/
     public Camera(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(name, precio, serie, marca, fabDate, marcaAr);
         //TODO Auto-generated constructor stub
     }
-
-
-    boolean portable = true;
-    
     
      
 
