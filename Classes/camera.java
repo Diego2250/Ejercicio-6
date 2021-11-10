@@ -1,6 +1,5 @@
 package Classes;
 
-import Interfaces.Callinterface;
 import Interfaces.Pictureinterface;
 import Interfaces.Videointerface;
 
@@ -11,6 +10,7 @@ Autor: Diego Morales, Javier Azurdia
 ******************************************************************/
 public class Camera extends Producto implements Pictureinterface, Videointerface {
     boolean portable = true;
+    
     /*Constructor de clase*/
     public Camera(String name, int precio, int serie, String marca, String fabDate, int marcaAr) {
         super(name, precio, serie, marca, fabDate, marcaAr);
@@ -30,7 +30,7 @@ public class Camera extends Producto implements Pictureinterface, Videointerface
     }
 
 
-         /*
+/*
     Metodo para mostrar un video
     */
     @Override
