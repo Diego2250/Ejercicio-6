@@ -6,6 +6,7 @@ Fecha: 08/11/2021
 Vista. Responsable de toda interaccion con el usuario.
 ***************************************************/
 package Classes;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Vista{
 	private Scanner scan;
@@ -156,11 +157,16 @@ public int menuPrductos(){
 
 	/*Metodo para mostrar mensaje de despedida al usuario
 	*/
-	public void factura(int nit, int total, int factura, String nombre, String fecha){
+	public void factura(int nit, int total, int factura, String nombre, String fecha, ArrayList<Integer> precios, ArrayList<String> articulos){
 		System.out.println("********************Electorica Latinoamericana********************");
 		System.out.println("Factura numero: "+factura);
 		System.out.println("Nombre del cliente: "+nombre);
 		System.out.println("NIT: "+nit);
+
+		print("*** Listado de Artículos ***");
+		for(int i = 0; i < precios.size(); i++ ){
+			print(articulos.get(i) + "  Q." + precios.get(i));
+		}
 		System.out.println("Fecha de compra: "+fecha);
 		System.out.println("Total a cancelar: Q"+total);
 	}
